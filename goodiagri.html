@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>谷得智農 GoodiAgri｜植物診療師領軍的農業服務團隊</title>
+<meta name="description" content="谷得智農由植物診療師領軍，提供田間顧問、農業輔導、肥料資材、智慧農業服務。降低農業技術門檻，減少栽培風險，讓智慧知識伴您豐收。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--gd:#1a3a1a;--gm:#2d5a1e;--gb:#4a8c2a;--gl:#7ab648;--gp:#e8f5d6;--gmist:#f4faea;--gold:#c8a84b;--goldl:#f0d98a;--earth:#5c3d1e;--cream:#faf8f2;--td:#1c1c1c;--tm:#4a4a4a;--tl:#7a7a7a;--w:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--td);background:var(--cream);line-height:1.7}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(26,58,26,0.97);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;height:64px}
+.nav-logo{font-family:'Noto Serif TC',serif;font-weight:900;font-size:1.15rem;color:var(--goldl);letter-spacing:.05em;text-decoration:none}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.82rem;font-weight:300;letter-spacing:.07em;transition:color .2s}
+.nav-links a:hover{color:var(--goldl)}
+.nav-cta{background:var(--gold)!important;color:var(--gd)!important;font-weight:500!important;padding:7px 18px;border-radius:2px}
+#hero{min-height:100vh;background:linear-gradient(155deg,var(--gd) 0%,var(--gm) 65%,#3a6b20 100%);display:flex;align-items:center;padding:100px 5vw 80px;position:relative;overflow:hidden}
+#hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(74,140,42,.2) 0%,transparent 60%),radial-gradient(ellipse at 15% 85%,rgba(200,168,75,.1) 0%,transparent 50%)}
+.hero-content{position:relative;z-index:1;max-width:660px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,168,75,.18);border:1px solid rgba(200,168,75,.38);color:var(--goldl);font-size:.76rem;letter-spacing:.14em;padding:5px 14px;border-radius:2px;margin-bottom:1.75rem}
+.hero-badge::before{content:'';width:6px;height:6px;min-width:6px;background:var(--gold);border-radius:50%}
+h1{font-family:'Noto Serif TC',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:900;color:var(--w);line-height:1.2;margin-bottom:1.4rem;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--goldl)}
+.hero-desc{font-size:1rem;color:rgba(255,255,255,.76);font-weight:300;max-width:520px;margin-bottom:2.5rem;line-height:1.9}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:var(--gold);color:var(--gd);font-weight:500;font-size:.92rem;padding:13px 30px;border-radius:2px;text-decoration:none;letter-spacing:.05em;transition:all .2s;display:inline-block}
+.btn-primary:hover{background:var(--goldl);transform:translateY(-1px)}
+.btn-outline{background:transparent;color:rgba(255,255,255,.9);border:1px solid rgba(255,255,255,.38);font-size:.92rem;padding:13px 30px;border-radius:2px;text-decoration:none;letter-spacing:.05em;transition:all .2s;display:inline-block}
+.btn-outline:hover{border-color:rgba(255,255,255,.8);background:rgba(255,255,255,.07)}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.14)}
+.stat-num{font-family:'Noto Serif TC',serif;font-size:1.7rem;font-weight:600;color:var(--goldl);line-height:1;margin-bottom:4px}
+.stat-label{font-size:.75rem;color:rgba(255,255,255,.55);letter-spacing:.07em}
+section{padding:100px 5vw}
+.eyebrow{font-size:.73rem;letter-spacing:.2em;color:var(--gb);font-weight:500;text-transform:uppercase;margin-bottom:.6rem;display:block}
+h2{font-family:'Noto Serif TC',serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:900;color:var(--gd);line-height:1.25;margin-bottom:1.25rem}
+.lead{font-size:1rem;color:var(--tm);font-weight:300;max-width:540px;line-height:1.9;margin-bottom:3.5rem}
+#services{background:var(--w)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5px;background:rgba(0,0,0,.07);border:1.5px solid rgba(0,0,0,.07)}
+.service-card{background:var(--w);padding:2.5rem 2rem;transition:background .25s}
+.service-card:hover{background:var(--gmist)}
+.svc-icon{width:46px;height:46px;background:var(--gp);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;font-size:1.3rem}
+.service-card h3{font-family:'Noto Serif TC',serif;font-size:1.1rem;font-weight:600;color:var(--gd);margin-bottom:.65rem}
+.service-card p{font-size:.86rem;color:var(--tm);line-height:1.8}
+.svc-tag{display:inline-block;margin-top:.9rem;font-size:.7rem;color:var(--gb);border:1px solid var(--gb);padding:3px 10px;border-radius:2px;letter-spacing:.07em}
+#about{background:var(--gd);color:var(--w)}
+#about h2{color:var(--w)}
+#about .eyebrow{color:var(--goldl)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+#about .lead{color:rgba(255,255,255,.7);max-width:100%}
+.mission-list{list-style:none;margin-top:1.75rem}
+.mission-list li{display:flex;align-items:flex-start;gap:1rem;padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.9rem;color:rgba(255,255,255,.8)}
+.mission-list li::before{content:'';width:7px;height:7px;min-width:7px;background:var(--gold);border-radius:50%;margin-top:9px}
+.pdbox{background:rgba(255,255,255,.05);border:1px solid rgba(200,168,75,.28);border-radius:4px;padding:2rem}
+.pdbox h3{font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--goldl);margin-bottom:.9rem}
+.pdbox p{font-size:.86rem;color:rgba(255,255,255,.7);line-height:1.9;margin-bottom:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:1.1rem}
+.chip{background:rgba(74,140,42,.28);border:1px solid rgba(74,140,42,.45);color:#a8d87a;font-size:.73rem;padding:4px 11px;border-radius:2px;letter-spacing:.05em}
+#cases{background:var(--cream)}
+.cases-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.5rem}
+.case-card{background:var(--w);border:1px solid rgba(0,0,0,.07);border-radius:4px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.case-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(26,58,26,.12)}
+.case-hdr{background:var(--gm);padding:1.5rem}
+.case-crop{font-size:.7rem;letter-spacing:.14em;color:var(--goldl);text-transform:uppercase;margin-bottom:.4rem}
+.case-hdr h3{font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--w);line-height:1.4}
+.case-body{padding:1.5rem}
+.case-body p{font-size:.85rem;color:var(--tm);line-height:1.85;margin-bottom:1.1rem}
+.case-result{background:var(--gp);border-left:3px solid var(--gb);padding:.7rem .9rem;border-radius:0 2px 2px 0;font-size:.83rem;color:var(--gd);font-weight:500}
+.case-quote{margin-top:.9rem;font-size:.8rem;color:var(--tl);font-style:italic;border-top:1px solid rgba(0,0,0,.07);padding-top:.9rem}
+#training{background:var(--w)}
+.training-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:5rem;align-items:start}
+.course-table{width:100%;border-collapse:collapse;font-size:.85rem;margin-top:1.5rem}
+.course-table th{text-align:left;font-size:.7rem;letter-spacing:.12em;color:var(--tl);padding:0 1rem .65rem 0;border-bottom:1px solid rgba(0,0,0,.1)}
+.course-table td{padding:.9rem 1rem .9rem 0;border-bottom:1px solid rgba(0,0,0,.05);color:var(--tm);vertical-align:top}
+.course-table td:first-child{font-weight:500;color:var(--gd);white-space:nowrap}
+.paopao{background:var(--gd);border-radius:4px;padding:2.5rem;color:var(--w)}
+.paopao h3{font-family:'Noto Serif TC',serif;font-size:1.45rem;color:var(--goldl);margin-bottom:.4rem}
+.paopao .sub{font-size:.8rem;color:rgba(255,255,255,.55);margin-bottom:1.4rem}
+.paopao p{font-size:.88rem;color:rgba(255,255,255,.78);line-height:1.9;margin-bottom:1.1rem}
+.pp-tags{display:flex;flex-wrap:wrap;gap:7px;margin:1.25rem 0}
+.pp-tag{background:rgba(122,182,72,.2);border:1px solid rgba(122,182,72,.4);color:#a8d87a;font-size:.76rem;padding:4px 13px;border-radius:2px}
+.btn-gold{display:inline-block;background:var(--gold);color:var(--gd);font-weight:500;font-size:.88rem;padding:11px 26px;border-radius:2px;text-decoration:none;letter-spacing:.05em;transition:background .2s;margin-top:.5rem}
+.btn-gold:hover{background:var(--goldl)}
+#field{background:var(--gmist)}
+.field-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start}
+.flow-steps{margin:2rem 0}
+.flow-step{display:flex;gap:1.2rem;align-items:flex-start;padding:1.1rem 0;border-bottom:1px solid rgba(0,0,0,.07)}
+.step-num{font-family:'Noto Serif TC',serif;font-size:1.5rem;font-weight:900;color:var(--gl);line-height:1;min-width:34px}
+.step-content h4{font-weight:500;color:var(--gd);font-size:.93rem;margin-bottom:3px}
+.step-content p{font-size:.81rem;color:var(--tm);line-height:1.7}
+.crops-box{background:var(--w);border-radius:4px;padding:2rem;border:1px solid rgba(0,0,0,.07)}
+.crops-box h3{font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--gd);margin-bottom:1.1rem;padding-bottom:.7rem;border-bottom:1px solid rgba(0,0,0,.08)}
+.crop-group{margin-bottom:1.1rem}
+.cg-label{font-size:.7rem;letter-spacing:.14em;color:var(--tl);text-transform:uppercase;margin-bottom:.45rem;display:block}
+.crop-chips{display:flex;flex-wrap:wrap;gap:6px}
+.crop-chip{background:var(--gp);color:var(--gd);font-size:.78rem;padding:3px 11px;border-radius:2px}
+.pain-box{margin-top:1.5rem;background:var(--w);border:1px solid rgba(0,0,0,.07);border-radius:4px;padding:1.5rem}
+.pain-box h4{font-size:.83rem;font-weight:500;color:var(--gd);margin-bottom:.9rem}
+.pain-list{list-style:none}
+.pain-list li{font-size:.81rem;color:var(--tm);padding:.38rem 0;padding-left:1rem;position:relative;line-height:1.6}
+.pain-list li::before{content:'—';position:absolute;left:0;color:var(--gl)}
+#smart{background:var(--w)}
+.smart-hero{background:var(--gd);border-radius:4px;padding:3rem;margin-bottom:3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.smart-hero h3{font-family:'Noto Serif TC',serif;font-size:1.75rem;color:var(--w);line-height:1.3;margin-bottom:.9rem}
+.smart-hero h3 span{color:var(--goldl)}
+.smart-hero>div:first-child p{font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.9}
+.smart-feats{display:grid;gap:.9rem}
+.smart-feat{background:rgba(255,255,255,.06);border:1px solid rgba(122,182,72,.22);border-radius:3px;padding:.9rem 1.1rem;display:flex;align-items:flex-start;gap:.9rem}
+.sf-icon{font-size:1.1rem;min-width:26px}
+.smart-feat h4{font-size:.87rem;font-weight:500;color:var(--goldl);margin-bottom:2px}
+.smart-feat p{font-size:.78rem;color:rgba(255,255,255,.58);line-height:1.6;margin:0}
+.smart-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.4rem}
+.smart-card{border:1px solid rgba(0,0,0,.08);border-radius:4px;padding:1.65rem;text-align:center;transition:border-color .2s}
+.smart-card:hover{border-color:var(--gb)}
+.sc-icon{font-size:1.9rem;margin-bottom:.65rem}
+.smart-card h4{font-family:'Noto Serif TC',serif;font-size:.97rem;color:var(--gd);margin-bottom:.45rem}
+.smart-card p{font-size:.8rem;color:var(--tl);line-height:1.7}
+#products{background:var(--cream)}
+.product-section{margin-bottom:5rem}
+.product-section:last-child{margin-bottom:0}
+.product-section h3{font-family:'Noto Serif TC',serif;font-size:1.45rem;color:var(--gd);margin-bottom:.4rem}
+.product-section .psub{font-size:.85rem;color:var(--tl);margin-bottom:1.75rem}
+.filter-row{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:1.75rem}
+.fbtn{background:var(--w);border:1px solid rgba(0,0,0,.12);color:var(--tm);font-size:.8rem;padding:5px 14px;border-radius:2px;cursor:pointer;font-family:inherit;transition:all .2s}
+.fbtn.active,.fbtn:hover{background:var(--gd);color:var(--w);border-color:var(--gd)}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.2rem}
+.ph-card{background:var(--w);border:2px dashed rgba(0,0,0,.1);border-radius:4px;padding:2.5rem 1.5rem;text-align:center;color:var(--tl)}
+.ph-icon{font-size:1.9rem;margin-bottom:.65rem;opacity:.38}
+.ph-card p{font-size:.78rem;line-height:1.6}
+.drip-cta{margin-top:2rem;background:var(--gd);border-radius:4px;padding:1.75rem 2.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.drip-cta h4{font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--w);margin-bottom:3px}
+.drip-cta p{font-size:.83rem;color:rgba(255,255,255,.62)}
+#contact{background:var(--gd)}
+#contact h2{color:var(--w)}
+#contact .eyebrow{color:var(--goldl)}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+#contact .lead{color:rgba(255,255,255,.62)}
+.ci-list{list-style:none;margin-top:.9rem}
+.ci-list li{display:flex;gap:1rem;align-items:flex-start;padding:.9rem 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.88rem;color:rgba(255,255,255,.8)}
+.ci-list li strong{color:var(--goldl);min-width:50px;font-weight:500}
+.line-btn{display:inline-flex;align-items:center;gap:10px;background:#06C755;color:var(--w);font-weight:500;font-size:.92rem;padding:13px 26px;border-radius:4px;text-decoration:none;margin-top:1.5rem;transition:background .2s}
+.line-btn:hover{background:#05b34b}
+.line-btn svg{width:21px;height:21px}
+.cform{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:2.25rem}
+.cform h3{font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--w);margin-bottom:1.4rem}
+.ff{margin-bottom:1.1rem}
+.ff label{display:block;font-size:.75rem;color:rgba(255,255,255,.52);letter-spacing:.1em;margin-bottom:.38rem}
+.ff input,.ff select,.ff textarea{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:var(--w);font-size:.88rem;font-family:inherit;padding:9px 13px;border-radius:2px;outline:none;transition:border-color .2s}
+.ff input:focus,.ff select:focus,.ff textarea:focus{border-color:var(--gold)}
+.ff select option{background:var(--gd)}
+.ff textarea{min-height:95px;resize:vertical}
+.fsub{width:100%;background:var(--gold);color:var(--gd);font-weight:500;font-size:.92rem;font-family:inherit;padding:12px;border:none;border-radius:2px;cursor:pointer;letter-spacing:.05em;transition:background .2s;margin-top:.4rem}
+.fsub:hover{background:var(--goldl)}
+footer{background:#0e1f0e;color:rgba(255,255,255,.45);padding:2.25rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.78rem}
+.flogo{font-family:'Noto Serif TC',serif;font-weight:900;color:var(--goldl);font-size:.97rem;letter-spacing:.05em}
+footer a{color:rgba(255,255,255,.38);text-decoration:none}
+footer a:hover{color:var(--goldl)}
+@media(max-width:900px){.about-grid,.training-layout,.field-layout,.smart-hero,.contact-layout{grid-template-columns:1fr;gap:2.5rem}.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo">谷得智農 GoodiAgri</a>
+  <ul class="nav-links">
+    <li><a href="#services">服務</a></li>
+    <li><a href="#about">關於我們</a></li>
+    <li><a href="#cases">成功案例</a></li>
+    <li><a href="#training">農業輔導</a></li>
+    <li><a href="#field">田間服務</a></li>
+    <li><a href="#smart">智慧農業</a></li>
+    <li><a href="#products">商品</a></li>
+    <li><a href="#contact" class="nav-cta">立即諮詢</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-badge">植物診療師領軍・國家認證專業</div>
+    <h1>作物的醫生<br><em>農民的夥伴</em></h1>
+    <p class="hero-desc">谷得智農由植物診療師領軍，提供田間顧問、專業課程和資材銷售。降低農業技術門檻，減少栽培風險，讓智慧知識伴您豐收。</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">預約田間診斷</a>
+      <a href="#services" class="btn-outline">了解我們的服務</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">100×</div><div class="stat-label">哈密瓜案例投資回報</div></div>
+      <div><div class="stat-num">50%↑</div><div class="stat-label">草莓成本節省</div></div>
+      <div><div class="stat-num">7+</div><div class="stat-label">服務作物種類</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <span class="eyebrow">我們的服務</span>
+  <h2>農業的全方位夥伴</h2>
+  <p class="lead">從田間診斷到資材銷售，從專業課程到智慧農業，谷得智農提供一站式農業解決方案。</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="svc-icon">🌱</div>
+      <h3>肥料資材</h3>
+      <p>嚴選優質肥料，依土壤檢測結果提供客製化配方，每一款產品都有科學依據與植物診療師把關。</p>
+      <span class="svc-tag">→ 前往商品頁</span>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">📚</div>
+      <h3>農業輔導</h3>
+      <p>從土壤、肥料、植物生理到逆境管理，開設系統化課程與「陪跑計畫」，手把手帶農民升級種植技術。</p>
+      <span class="svc-tag">→ 了解陪跑計畫</span>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">📡</div>
+      <h3>智慧農業</h3>
+      <p>導入 e速控 智慧灌溉系統，土壤感測器搭配 4G 雲端平台，一支手機即可遠端監控整座農場。</p>
+      <span class="svc-tag">→ 了解 e速控</span>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">🔍</div>
+      <h3>田間服務</h3>
+      <p>「學長到你家」企劃，植物診療師親赴田間現場診斷，找出栽培問題根源，提供可立即執行的改善方案。</p>
+      <span class="svc-tag">→ 預約學長到你家</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <span class="eyebrow">關於谷得智農</span>
+      <h2>作物的守護者<br>農民身邊的植物醫生</h2>
+      <p class="lead">我們的使命是走進田間，找到問題的源頭，用最簡單有效的方式解決，讓農民不花冤枉錢，達到永續農業的目標。</p>
+      <ul class="mission-list">
+        <li>降低農業技術門檻，讓每位農民都能用科學種田</li>
+        <li>找到栽培失敗的根本原因，不讓農民憑感覺試錯</li>
+        <li>提升農業收入，讓好產品自己找到買家</li>
+        <li>推動永續農業，減少農藥濫用與資源浪費</li>
+      </ul>
+    </div>
+    <div class="pdbox">
+      <h3>什麼是植物診療師？</h3>
+      <p>植物診療師（Plant Doctor）是台灣 2024 年正式立法通過的國家認證專業資格——作物界的「專科醫師」，需通過國家高等考試取得證書。</p>
+      <p>透過田間觀察、病徵分析與土壤檢測，找出病蟲害與栽培障礙的根本原因，協助農民精準用藥、減少農藥依賴，保障農產品安全。</p>
+      <p>服務流程如同看醫生：<br>
+        <strong style="color:var(--goldl)">問診</strong> 了解作物症狀與栽培歷史 →
+        <strong style="color:var(--goldl)">診斷</strong> 田間觀察、土壤檢測 →
+        <strong style="color:var(--goldl)">開立處方</strong> 提供精準防治與肥培方案 →
+        <strong style="color:var(--goldl)">追蹤輔導</strong> 確認成效持續調整
+      </p>
+      <div class="chips">
+        <span class="chip">病蟲害診斷與鑑定</span>
+        <span class="chip">植物生理障礙診治</span>
+        <span class="chip">綜合防治技術指導</span>
+        <span class="chip">有害生物監測調查</span>
+        <span class="chip">農業資材使用推廣</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases">
+  <span class="eyebrow">成功案例</span>
+  <h2>實際案例：我們如何幫農民找回豐收</h2>
+  <p class="lead">每一個案例都從土壤診斷開始，用數據說話，用成果驗證。</p>
+  <div class="cases-grid">
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="case-crop">網紋洋香瓜・哈密瓜</div>
+        <h3>投資 5,000 元<br>增收 50 萬元</h3>
+      </div>
+      <div class="case-body">
+        <p>農民原有種植基礎，但產量與品質未達頂級市場標準。我們從土壤檢測開始，掌握耕地優劣勢，依數據設計客製化肥培方案，並由植物診療師全程陪同監督種植與防治工作。</p>
+        <div class="case-result">額外投資 NT$5,000 → 增加收益 NT$500,000（投報率 100 倍）</div>
+        <div class="case-quote">「好產品不用等好價錢，訂單自己會來找你。」</div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="case-crop">草莓・苗栗大湖 / 卓蘭產區</div>
+        <h3>逆境改善計畫<br>成本節省 50% 以上</h3>
+      </div>
+      <div class="case-body">
+        <p>農民習慣以大量雞糞底肥補救草莓苗良率下滑問題，反造成土壤 EC 值過高、根系缺氧的惡性循環。我們評估土壤三大性狀後，以蔗渣取代大量有機肥，導入滴灌少量多餐供肥，搭配矽鈣硼鉀甜菜鹼抗逆境策略。</p>
+        <div class="case-result">綜合成本節省 50% 以上，產量與品質同步提升</div>
+        <div class="case-quote">「投入的資材減少了，但草莓比以往更好、更穩定。」</div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="case-crop">多元作物・全台各地</div>
+        <h3>學長到你家<br>實地診斷・立即改善</h3>
+      </div>
+      <div class="case-body">
+        <p>植物診療師親赴田間，針對柑橘、水梨、草莓、蔬菜、百合、洋桔梗、哈密瓜等多種作物進行現場診斷，找出高溫、鹽害、病蟲害、缺氧等複合逆境的根本原因，提供可立即執行的改善方案。</p>
+        <div class="case-result">已完成：柑橘・水梨・草莓・蔬菜・百合・洋桔梗・哈密瓜</div>
+        <div class="case-quote">「不是農民一個人摸索，而是有植物診療師在你身邊一起跑。」</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="training">
+  <span class="eyebrow">農業輔導</span>
+  <h2>學農業，從課堂到田間<br>一步到位</h2>
+  <div class="training-layout">
+    <div>
+      <p class="lead" style="margin-bottom:0;">谷得智農的農業輔導不只是上課——我們讓植物診療師走進你的農場，手把手帶你解決真實問題。</p>
+      <h3 style="font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--gd);margin:2rem 0 .4rem;">專業課程</h3>
+      <table class="course-table">
+        <thead><tr><th>課程主題</th><th>內容說明</th></tr></thead>
+        <tbody>
+          <tr><td>土壤與肥料學</td><td>土壤結構、EC值、酸鹼值判讀、施肥邏輯與設計</td></tr>
+          <tr><td>植物生理學</td><td>作物生長機制、光合作用、養分吸收原理</td></tr>
+          <tr><td>逆境管理</td><td>高溫、鹽害、乾旱、淹水的診斷與應對策略</td></tr>
+          <tr><td>草莓專班</td><td>在台灣重要草莓產區開設，涵蓋育苗到採收全流程</td></tr>
+          <tr><td>果樹・蔬菜・花卉班</td><td>全台巡迴，針對各地主要作物的肥培與逆境課程</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="paopao">
+      <h3>陪跑計畫</h3>
+      <p class="sub">植物診療師手把手，從頭陪你跑到採收</p>
+      <p>「陪跑計畫」是谷得智農最核心的輔導服務。由植物診療師親自帶著農民，從土壤評估、肥培規劃、種植監督，一路陪伴到採收，每個決策都有專業依據，每個問題都能即時解答。</p>
+      <p>不是農民一個人摸索，而是有植物診療師在你身邊一起跑。</p>
+      <div class="pp-tags">
+        <span class="pp-tag">土壤評估</span><span class="pp-tag">肥培規劃</span><span class="pp-tag">種植監督</span><span class="pp-tag">病蟲害防治</span><span class="pp-tag">採收全程</span>
+      </div>
+      <p style="font-size:.81rem;color:rgba(255,255,255,.5);margin-bottom:1rem;">適合：想系統升級種植方式 / 希望打入高端市場 / 嘗試新作物的農民</p>
+      <a href="#contact" class="btn-gold">預約陪跑計畫諮詢 →</a>
+    </div>
+  </div>
+</section>
+
+<section id="field">
+  <span class="eyebrow">田間服務</span>
+  <h2>學長到你家</h2>
+  <div class="field-layout">
+    <div>
+      <p class="lead">植物診療師直接進田，不用你找答案，我們親自到田裡幫你找。</p>
+      <div class="flow-steps">
+        <div class="flow-step"><div class="step-num">01</div><div class="step-content"><h4>預約申請</h4><p>填寫作物種類、目前症狀、種植面積與聯絡方式</p></div></div>
+        <div class="flow-step"><div class="step-num">02</div><div class="step-content"><h4>植物診療師出診</h4><p>親赴田間實地觀察、採集樣本、分析土壤與植株狀況</p></div></div>
+        <div class="flow-step"><div class="step-num">03</div><div class="step-content"><h4>現場診斷報告</h4><p>當場說明問題根本原因，提供具體可執行的改善建議</p></div></div>
+        <div class="flow-step"><div class="step-num">04</div><div class="step-content"><h4>追蹤回訪（選配）</h4><p>確認改善成效，視情況調整肥培或防治策略</p></div></div>
+      </div>
+      <div class="pain-box">
+        <h4>這些問題，我們都能幫你解答</h4>
+        <ul class="pain-list">
+          <li>葉片黃化、捲曲、掉落，找不出原因</li>
+          <li>施了很多肥料，作物卻沒有起色</li>
+          <li>病蟲害反覆發生，噴藥也壓不住</li>
+          <li>土壤感覺越種越硬、越種越差</li>
+          <li>新品種種植，不確定肥培方向</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="crops-box">
+        <h3>已服務作物</h3>
+        <div class="crop-group"><span class="cg-label">果樹類</span><div class="crop-chips"><span class="crop-chip">柑橘</span><span class="crop-chip">水梨</span></div></div>
+        <div class="crop-group"><span class="cg-label">漿果・瓜果類</span><div class="crop-chips"><span class="crop-chip">草莓</span><span class="crop-chip">哈密瓜（網紋洋香瓜）</span></div></div>
+        <div class="crop-group"><span class="cg-label">蔬菜類</span><div class="crop-chips"><span class="crop-chip">各類蔬菜</span></div></div>
+        <div class="crop-group"><span class="cg-label">花卉類</span><div class="crop-chips"><span class="crop-chip">百合</span><span class="crop-chip">洋桔梗</span></div></div>
+        <p style="font-size:.8rem;color:var(--tl);margin-top:1.25rem;line-height:1.7;">不論你種什麼，只要有栽培困難，我們都願意走進你的田間。</p>
+      </div>
+      <div style="margin-top:1.4rem;">
+        <a href="#contact" class="btn-primary" style="background:var(--gd);color:var(--w);display:block;text-align:center;">立即預約學長到你家 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="smart">
+  <span class="eyebrow">智慧農業</span>
+  <h2>e速控・讓農田聽懂你的指令</h2>
+  <div class="smart-hero">
+    <div>
+      <h3>不只遠端控制<br><span>更懂農田現場</span></h3>
+      <p>谷得智農導入 e速控 智慧灌溉系統——自研軟硬體、9版持續更新，從田間問題出發。把複雜的問題先替農民想過、試過、解決過，再交到農民手上。</p>
+    </div>
+    <div class="smart-feats">
+      <div class="smart-feat"><div class="sf-icon">📡</div><div><h4>感測數據即時上傳</h4><p>土壤濕度、溫度等資料透過 4G 即時上傳雲端，隨時掌握田間狀況</p></div></div>
+      <div class="smart-feat"><div class="sf-icon">📱</div><div><h4>APP 遠端管理控制</h4><p>隨時隨地查看設備狀態，控制器與智慧水閥一鍵操作</p></div></div>
+      <div class="smart-feat"><div class="sf-icon">💧</div><div><h4>條件自動連動灌溉</h4><p>依感測條件或排程設定，自動啟動灌溉流程，節省人力成本</p></div></div>
+    </div>
+  </div>
+  <div class="smart-cards">
+    <div class="smart-card"><div class="sc-icon">🎛️</div><h4>控制器</h4><p>IP67 防水，耐用測試超過 10 萬次，穩定可靠</p></div>
+    <div class="smart-card"><div class="sc-icon">🌡️</div><h4>土壤感測器</h4><p>即時監測土壤濕度與溫度，數據直送 4G 雲端平台</p></div>
+    <div class="smart-card"><div class="sc-icon">🚰</div><h4>智慧水閥</h4><p>扭力精準控制，頂部整合太陽能板，無需外接電源</p></div>
+    <div class="smart-card"><div class="sc-icon">☁️</div><h4>4G 雲端平台</h4><p>跨裝置管理多個農場區塊，歷史數據一目了然</p></div>
+  </div>
+</section>
+
+<section id="products">
+  <span class="eyebrow">商品</span>
+  <h2>嚴選農業資材</h2>
+  <div class="product-section">
+    <h3>🌱 肥料資材</h3>
+    <p class="psub">每一款產品均經植物診療師評估把關，依作物與土壤條件提供最適配方</p>
+    <div class="filter-row">
+      <button class="fbtn active">全部</button>
+      <button class="fbtn">抗逆境</button>
+      <button class="fbtn">水溶肥</button>
+      <button class="fbtn">有機資材</button>
+      <button class="fbtn">微量元素</button>
+      <button class="fbtn">土壤改良</button>
+    </div>
+    <div class="products-grid">
+      <div class="ph-card"><div class="ph-icon">📦</div><p>商品上架中<br>敬請期待</p></div>
+      <div class="ph-card"><div class="ph-icon">📦</div><p>商品上架中<br>敬請期待</p></div>
+      <div class="ph-card"><div class="ph-icon">📦</div><p>商品上架中<br>敬請期待</p></div>
+      <div class="ph-card"><div class="ph-icon">📦</div><p>商品上架中<br>敬請期待</p></div>
+    </div>
+  </div>
+  <div class="product-section">
+    <h3>💧 滴灌系統</h3>
+    <p class="psub">搭配 e速控 智慧農業，精準供水供肥，節省人力與成本</p>
+    <div class="filter-row">
+      <button class="fbtn active">全部</button>
+      <button class="fbtn">滴頭配件</button>
+      <button class="fbtn">管線系統</button>
+      <button class="fbtn">控制器</button>
+      <button class="fbtn">套裝組合</button>
+    </div>
+    <div class="products-grid">
+      <div class="ph-card"><div class="ph-icon">🔧</div><p>商品上架中<br>敬請期待</p></div>
+      <div class="ph-card"><div class="ph-icon">🔧</div><p>商品上架中<br>敬請期待</p></div>
+      <div class="ph-card"><div class="ph-icon">🔧</div><p>商品上架中<br>敬請期待</p></div>
+    </div>
+    <div class="drip-cta">
+      <div><h4>需要專業安裝規劃？</h4><p>谷得智農提供到府評估與系統設計服務，依農場規模量身規劃</p></div>
+      <a href="#contact" class="btn-gold">預約安裝諮詢 →</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <span class="eyebrow">聯絡我們</span>
+  <h2>準備好讓農業升級了嗎？</h2>
+  <div class="contact-layout">
+    <div>
+      <p class="lead">植物診療師親自為您評估最適合的農業解決方案。歡迎透過以下方式聯絡我們。</p>
+      <ul class="ci-list">
+        <li><strong>電話</strong>05-5850086</li>
+        <li><strong>地址</strong>雲林縣莿桐鄉義和村三和 124 之 8 號</li>
+        <li><strong>統編</strong>00101812</li>
+        <li><strong>LINE</strong>@464cdtnd</li>
+      </ul>
+      <a href="https://line.me/R/ti/p/@464cdtnd" target="_blank" class="line-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.141h1.756c.349 0 .629.283.629.63 0 .344-.28.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.070 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+        加入 LINE 官方帳號
+      </a>
+    </div>
+    <div class="cform">
+      <h3>送出諮詢需求</h3>
+      <div class="ff"><label>您的姓名</label><input type="text" placeholder="請輸入姓名"></div>
+      <div class="ff"><label>聯絡電話</label><input type="tel" placeholder="請輸入電話"></div>
+      <div class="ff"><label>電子信箱</label><input type="email" placeholder="請輸入 Email"></div>
+      <div class="ff"><label>主要作物</label><input type="text" placeholder="例：草莓、蔬菜、柑橘"></div>
+      <div class="ff"><label>諮詢服務</label>
+        <select>
+          <option>請選擇服務項目</option>
+          <option>學長到你家（田間診斷）</option>
+          <option>陪跑計畫</option>
+          <option>農業課程報名</option>
+          <option>肥料資材詢價</option>
+          <option>智慧農業系統</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="ff"><label>說明您的問題</label><textarea placeholder="請描述您目前面臨的栽培問題或需求"></textarea></div>
+      <button class="fsub">送出諮詢 →</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="flogo">谷得智農 GoodiAgri</div>
+    <div style="margin-top:5px;">統一編號：00101812 ｜ 雲林縣莿桐鄉義和村三和 124 之 8 號</div>
+  </div>
+  <div style="text-align:right;">
+    <div>goodiagri.com</div>
+    <div style="margin-top:4px;"><a href="https://line.me/R/ti/p/@464cdtnd" target="_blank">LINE @464cdtnd</a> ｜ <a href="tel:055850086">05-5850086</a></div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.fbtn').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    this.closest('.product-section').querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
